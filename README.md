@@ -3,7 +3,7 @@
 
 Glossário web de termos técnicos utilizados no campo da tecnologia. Inclui termos comumente usados na área de desenvolvimento de software, DevOps, IA e outros tópicos relacionados.
 
-## Tecnologias utilizadas
+## ⚡ Tecnologias utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - **HTML 5:** linguagem de marcação utilizada para a estruturação e apresentação do conteúdo.
@@ -11,7 +11,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **JavaScript:** linguagem utilizada para adicionar interatividade às páginas.
 - **React:** biblioteca JavaScript de código aberto utlizada para construir interfaces de usuário.
 
-## Como rodar o projeto
+## 💻 Como rodar o projeto
 Siga os passos abaixo para executar o projeto em sua máquina local:
 
 1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode fazer o download e instalar o Node.js no site oficial: https://nodejs.org.
@@ -29,3 +29,6 @@ Siga os passos abaixo para executar o projeto em sua máquina local:
 `npm start`  
   
 6. O aplicativo será aberto automaticamente em seu navegador padrão no endereço http://localhost:3000.
+
+## ⚖️ Licença
+Este projeto está licenciado sob a MIT License.
