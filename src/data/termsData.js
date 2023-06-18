@@ -185,6 +185,11 @@ const termsData = [
     description: 'JavaScript Object Notation. Um formato leve de troca de dados que é fácil de ler e escrever para humanos e fácil de analisar e gerar para máquinas.'
   },
   {
+    name: 'JSON-like (BSON)',
+    categories: ['Formatos de dados'],
+    description: 'Binary JSON. Formato de dados binários semelhante ao JSON, projetado para armazenamento eficiente e troca de informações em bancos de dados NoSQL. Oferece suporte a tipos de dados adicionais e é mais compacto e rápido em comparação com o JSON.'
+  },
+  {
     name: 'XML',
     categories: ['Formatos de dados'],
     description: 'eXtensible Markup Language. Uma linguagem de marcação que define regras para a codificação de documentos legíveis por humanos e por máquinas.'
