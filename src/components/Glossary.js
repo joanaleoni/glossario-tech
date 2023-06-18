@@ -18,10 +18,12 @@ function Glossary() {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
+    setCurrentPage(1); 
   };
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
+    setCurrentPage(1); 
   };
 
   const handlePrevPage = () => {
@@ -43,19 +45,20 @@ function Glossary() {
     })
     .sort((a, b) => a.name.localeCompare(b.name));
 
-  const visibleTerms = filteredTerms.slice(startIndex, endIndex);
+  const totalItems = filteredTerms.length;
+  const calculatedTotalPages = Math.ceil(totalItems / itemsPerPage);
 
   useEffect(() => {
-    const totalItems = filteredTerms.length;
-    setTotalPages(Math.ceil(totalItems / itemsPerPage));
-
+    setTotalPages(calculatedTotalPages);
     setCurrentPage((prevPage) => {
-      if (prevPage > totalPages) {
-        return totalPages; // Adjust current page if it exceeds the total pages
+      if (prevPage > calculatedTotalPages) {
+        return calculatedTotalPages;
       }
       return prevPage;
     });
-  }, [filteredTerms, totalPages]);
+  }, [calculatedTotalPages]);
+
+  const visibleTerms = filteredTerms.slice(startIndex, endIndex);
 
   return (
     <>
