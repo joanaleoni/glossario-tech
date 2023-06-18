@@ -36,6 +36,10 @@ body {
 
 
 /* Header */
+.header-logo-link {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -60,7 +64,6 @@ body {
 h1 {
   font-size: 8rem;
   color: var(--color-primary);
-  /* margin-bottom: 1rem; */
 }
 
 h1 span {
@@ -70,6 +73,7 @@ h1 span {
 .header-text p {
   margin-left: 1rem;
   text-align: left;
+  color: var(--color-dark-text);
 }
 
 h1,
