@@ -6,7 +6,7 @@ Plataforma online que reúne termos técnicos utilizados no campo da tecnologia.
 ## 🔗 Acesse
 Navegue pelos termos de forma fácil e intuitiva em [glossariotech.netlify.app](https://glossariotech.netlify.app)  
 
-## ⚡ Tecnologias utilizadas
+## 💻 Tecnologias utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - **HTML 5:** linguagem de marcação utilizada para a estruturação e apresentação do conteúdo.
@@ -72,7 +72,7 @@ A estrutura do projeto consiste em:
   - `📄 reportWebVitals.js` arquivo de relatório de métricas de desempenho da web.
   - `📄 setup.js` arquivo de configuração para os testes.
 
-## 💻 Como rodar o projeto
+## ⚡ Como rodar o projeto
 Siga os passos abaixo para executar o projeto em sua máquina local:
 
 1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode fazer o download e instalar o Node.js no site oficial: https://nodejs.org.
