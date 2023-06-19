@@ -103,7 +103,8 @@ h3 {
   cursor: pointer;
 }
 
-.search-input:focus {
+.search-input:focus,
+.category-select:focus {
   outline: none;
 }
 
@@ -197,15 +198,11 @@ h3 {
   color: var(--color-primary-light);
   font-weight: bold;
   text-decoration: none;
-  background-image: linear-gradient(to right, var(--color-primary) 0%, var(--color-primary) 100%);
-  background-size: 0% 2px; 
-  background-position: 0 110%; 
-  background-repeat: no-repeat;
-  transition: background-size 0.7s ease-in;
+  transition: color 0.8s ease-in-out; 
 }
 
 .no-results-container a:hover {
-  background-size: 100% 2px;
+  color: var(--color-secondary);
 }
 
 /* Footer */

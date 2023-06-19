@@ -47,7 +47,7 @@ function Glossary() {
       return (
         <div className="no-results-container">
           <p>
-            Que pena! Parece que não há nenhum resultado para o termo <span>"{searchTerm}"</span>.
+            Que pena! Não foi encontrado nenhum resultado para o termo <span>"{searchTerm}"</span>.
           </p>
           <p>
             <a target="_blank" rel="noreferrer" href="https://forms.gle/xux29vYtsoakbdZg9">Clique aqui</a> para sugerir a inclusão desse termo no GlossárioTech.
