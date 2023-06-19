@@ -14,6 +14,69 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **JavaScript:** linguagem utilizada para adicionar interatividade às páginas.
 - **React:** biblioteca JavaScript de código aberto utlizada para construir interfaces de usuário.
 
+## 📂 Estrutura do projeto
+O projeto segue a seguinte estrutura de diretórios:  
+
+```
+├── 📁 glossario-tech/
+│ ├── 📁 public/
+│ │ ├── 📄 favicon.ico
+│ │ ├── 📄 index.html
+│ │ ├── 📄 logo.png
+│ │ ├── 📄 manifest.json
+│ │ └── 📄 robots.txt
+│ ├── 📁 src/
+│ │ ├── 📁 assets/
+│ │ │ └── 📄 image-logo.png
+│ │ ├── 📁 components/
+│ │ │ ├── 📄 Card.js
+│ │ │ ├── 📄 Filters.js
+│ │ │ ├── 📄 Footer.js
+│ │ │ ├── 📄 Glossary.js
+│ │ │ └── 📄 Header.js
+│ │ ├── 📁 data/
+│ │ │ └── 📄 termsData.js
+│ │ ├── 📁 styles/
+│ │ │ ├── 📄 App.css
+│ │ │ └── 📄 index.css
+│ │ ├── 📄 App.js
+│ │ ├── 📄 App.test.js
+│ │ ├── 📄 index.js
+│ │ ├── 📄 reportWebVitals.js
+│ │ └── 📄 setup.js
+│ ├── 📄 .gitignore
+│ ├── 📄 LICENSE
+│ ├── 📄 package-lock.json
+│ ├── 📄 package.json
+│ └── 📄 README.md
+```
+
+A estrutura do projeto consiste em:  
+- `📁 public/` contém arquivos públicos do projeto.
+- `📁 src/` contém os arquivos-fonte do projeto.
+  - `📁 assets/` armazena recursos estáticos, como imagens utilizadas no projeto.
+  - `📁 components/` contém os componentes utilizados para criar a interface de usuário.
+    - `📄 Card.js` componente utilizado para exibir os termos do glossário em formato de card.
+    - `📄 Filters.js` componente de filtros usados para filtrar os termos do glossário. Inclui um campo de busca e um seletor de categorias.
+    - `📄 Footer.js` componente de rodapé exibido na parte inferior do site.
+    - `📄 Glossary.js` componente utilizado para exibição do glossário.
+    - `📄 Header.js` componente de cabeçalho exibido na parte superior do site.
+  - `📁 data/` armazena dados do projeto.
+    - `📄 termsData.js` arquivo contendo um array com os termos do glossário.
+  - `📁 styles/` contém arquivos de estililização.
+    - `📄 App.css` arquivo de estilos para o componente App.js.
+    - `📄 index.css` arquivo dos estilos principais do projeto, incluindo importações das fontes, variáveis CSS e os estilos para elementos base.
+  - `📄 App.js` componente principal da aplicação.
+  - `📄 App.test.js` contém os testes para o componente App.js.
+  - `📄 index.js` ponto de entrada do aplicativo, onde o ReactDOM.render é chamado para renderizar a aplicação na página HTML.
+  - `📄 reportWebVitals.js` arquivo de relatório de métricas de desempenho da web.
+  - `📄 setup.js` arquivo de configuração para os testes.
+- `📄 .gitignore` arquivo que especifica quais arquivos e diretórios devem ser ignorados pelo no versionamento Git.
+- `📄 LICENSE` arquivo de licença do projeto.
+- `📄 package-lock.json` arquivo gerado automaticamente pelo gerenciadore de pacotes npm, que registra as versões exatas das dependências do projeto.
+- `📄 package.json` arquivo que contém as informações do projeto, como nome, versão e dependências.
+- `📄 README.md` arquivo de documentação do projeto, que fornece informações sobre o projeto e sua utilização.
+
 ## 💻 Como rodar o projeto
 Siga os passos abaixo para executar o projeto em sua máquina local:
 
@@ -32,6 +95,9 @@ Siga os passos abaixo para executar o projeto em sua máquina local:
 `npm start`  
   
 6. O aplicativo será aberto automaticamente em seu navegador padrão no endereço http://localhost:3000.
+
+## 📑 Como executar os testes
+Para executar os testes e visualizar os resultados no terminal, navegue até o diretório raiz do projeto e execute o comando `npm test`.
 
 ## ⚖️ Licença
 Este projeto está licenciado sob a [MIT License](https://opensource.org/license/mit/).
