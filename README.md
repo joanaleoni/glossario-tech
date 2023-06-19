@@ -1,10 +1,10 @@
 # GlossárioTech
 ![image](https://lh3.googleusercontent.com/pw/AJFCJaUBpjkOjUqXVAO71FTRF9fZ1lY2aXREDk81MKIT9-RFkpH6AMckGGbg30GJgf44yYKqL3DoZ318N2-vgn6RrJ65GTfq2TcWETXhch-gkNpTjm7PxJeQOvBf6jutEKnAYMKprvHjJuFYHllEB5LcGjqGmkf9MNiHSAE7s-BB8OZPCaftH4plKc_s9QUCCcf2xhrLZsyz9Ay7A4XqTYIzDDrYQkGNGSnXXQxmJWvArdz3lhw3KaNS5hWUdSndNaMN63XgBq5xf1zI0aWJL8R5juxpnETnqws-94H6IPrLMTQXsJvMXvNEdeq-DpgrZ1LHvzbgm2LBooQ8scNAEOCwghb4q1QiIpEfN6O7Yk7K-6dM2pCp5x3ggk-oc489V-pizVQXW1ZBujQCUcZ1R2DTLBd-aFfQFIXZAYBzW5h5bkOuT1R-Bmct2sXmgQMOpKk-jT28K_4lWFbNtkI8guKmZmjfgBxgjrteeOkZBhdq0jjrxT01vReiNE05D-lewDqP75BorMtLsMEK0tZogdv-wIlgutCfuNaRGRl_Q2KPJhsi_1qqMeF30F_DKLiZeiDojUwVVyTnzvELnkHpBGyYWWC0jpf5HMZqqNvV5wXU-5030GK2JefzjZQG_ntnW1CcMF1jCvTPn4Xcn5EWdr_8klxTAi0Uo6XpoZRSln-jxPDOv9q6BbQs_jTSisxwcRPqAbd71st3g7oqhEMIKuOu5cmaehZJgC1zDOT0xG4ukJDyxCBJ-H9f63wV1tYJsZcD5IRewGCfyphddI5j_gJvakoSJU5mN8JidwAsxlOEq92bf1QWrAwlBD_AsX-6idfkaEEZTpq8EYwJBTLZWFWQH4ODHfQwUf6G0X0pmMytFfBZTnAsymscuy8pIfMlz0VwcZwWALon2FjDVpPw4nyGKLX5Acs_Ltz93Q76LhXjOKygvHR-aYzQkA5jwBfZMqg1RocaA2Xdf_gLa8_vKmXcHc8Hu8BvkA=w859-h290-s-no?authuser=0)
 
-Plataforma online que reúne termos técnicos utilizados no campo da tecnologia. Cobrindo diferentes disciplinas, como desenvolvimento de software, DevOps, IA e muito mais, o GlossárioTech é um recurso para profissionais, estudantes e entusiastas da área que desejam expandir e aprimorar seu vocabulário tecnológico. 
+Plataforma online que reúne termos técnicos utilizados no campo da tecnologia. Cobrindo diferentes disciplinas, como desenvolvimento de software, DevOps, IA e muito mais, o GlossárioTech é um recurso para profissionais, estudantes e entusiastas da área que desejam expandir e aprimorar seu vocabulário tecnológico. **E aí, qual termo você vai decifrar hoje?**
 
 ## 🔗 Acesse
-Navegue pelos termos de forma fácil e intuitiva em [glossariotech.netlify.app](https://glossariotech.netlify.app)  
+Navegue pelos termos de forma fácil e intuitiva em [glossariotech.netlify.app](https://glossariotech.netlify.app)
 
 ## 💻 Tecnologias utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
@@ -96,3 +96,7 @@ Para executar os testes e visualizar os resultados no terminal, navegue até o d
 
 ## ⚖️ Licença
 Este projeto está licenciado sob a [MIT License](https://opensource.org/license/mit/).
+
+
+<div align="center"><em>"Apenas que... Busquem conhecimento."</em></div>
+<p align="center"><em>– ET Bilu, 2010</em></p>
