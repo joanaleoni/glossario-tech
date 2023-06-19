@@ -33,4 +33,4 @@ Siga os passos abaixo para executar o projeto em sua máquina local:
 6. O aplicativo será aberto automaticamente em seu navegador padrão no endereço http://localhost:3000.
 
 ## ⚖️ Licença
-Este projeto está licenciado sob a MIT License.
+Este projeto está licenciado sob a [MIT License](https://opensource.org/license/mit/).
