@@ -71,11 +71,6 @@ A estrutura do projeto consiste em:
   - `📄 index.js` ponto de entrada do aplicativo, onde o ReactDOM.render é chamado para renderizar a aplicação na página HTML.
   - `📄 reportWebVitals.js` arquivo de relatório de métricas de desempenho da web.
   - `📄 setup.js` arquivo de configuração para os testes.
-- `📄 .gitignore` arquivo que especifica quais arquivos e diretórios devem ser ignorados pelo no versionamento Git.
-- `📄 LICENSE` arquivo de licença do projeto.
-- `📄 package-lock.json` arquivo gerado automaticamente pelo gerenciadore de pacotes npm, que registra as versões exatas das dependências do projeto.
-- `📄 package.json` arquivo que contém as informações do projeto, como nome, versão e dependências.
-- `📄 README.md` arquivo de documentação do projeto, que fornece informações sobre o projeto e sua utilização.
 
 ## 💻 Como rodar o projeto
 Siga os passos abaixo para executar o projeto em sua máquina local:
