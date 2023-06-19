@@ -4,7 +4,11 @@
 Plataforma online que reúne termos técnicos utilizados no campo da tecnologia. Cobrindo diferentes disciplinas, como desenvolvimento de software, DevOps, IA e muito mais, o GlossárioTech é um recurso para profissionais, estudantes e entusiastas da área que desejam expandir seu vocabulário tecnológico. **E aí, qual termo você vai decifrar hoje?**
 
 ## 🔗 Acesse
-Navegue pelos termos de forma fácil e intuitiva em [glossariotech.netlify.app](https://glossariotech.netlify.app)
+Navegue pelos termos de forma fácil e intuitiva em [glossariotech.netlify.app](https://glossariotech.netlify.app).
+
+## ⭐ Sugira novos termos
+Não encontrou o termo que estava procurando?  
+[Clique aqui](https://docs.google.com/forms/d/e/1FAIpQLSfpxrBwAd3ZNzQ1KraBoE5JC0omkOymKj7MdmL4ja5yocvYPA/viewform) para compartilhar suas sugestões. Sua contribuição é valiosa!
 
 ## 💻 Tecnologias utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
@@ -13,59 +17,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **CSS 3:** linguagem de estilização utilizada para estilizar os elementos HTML.
 - **JavaScript:** linguagem utilizada para adicionar interatividade às páginas.
 - **React:** biblioteca JavaScript de código aberto utlizada para construir interfaces de usuário.
-
-## 📂 Estrutura do projeto
-O projeto segue a seguinte estrutura de diretórios:  
-
-```
-├── 📁 glossario-tech/
-│ ├── 📁 public/
-│ │ ├── 📄 favicon.ico
-│ │ ├── 📄 index.html
-│ │ ├── 📄 logo.png
-│ │ ├── 📄 manifest.json
-│ │ └── 📄 robots.txt
-│ ├── 📁 src/
-│ │ ├── 📁 assets/
-│ │ │ └── 📄 image-logo.png
-│ │ ├── 📁 components/
-│ │ │ ├── 📄 Card.js
-│ │ │ ├── 📄 Filters.js
-│ │ │ ├── 📄 Footer.js
-│ │ │ ├── 📄 Glossary.js
-│ │ │ └── 📄 Header.js
-│ │ ├── 📁 data/
-│ │ │ └── 📄 termsData.js
-│ │ ├── 📁 styles/
-│ │ │ ├── 📄 App.css
-│ │ │ └── 📄 index.css
-│ │ ├── 📄 App.js
-│ │ ├── 📄 App.test.js
-│ │ ├── 📄 index.js
-│ │ ├── 📄 reportWebVitals.js
-│ │ └── 📄 setup.js
-```
-
-A estrutura do projeto consiste em:  
-- `📁 public/` contém arquivos públicos do projeto.
-- `📁 src/` contém os arquivos-fonte do projeto.
-  - `📁 assets/` armazena recursos estáticos, como imagens utilizadas no projeto.
-  - `📁 components/` contém os componentes utilizados para criar a interface de usuário.
-    - `📄 Card.js` componente utilizado para exibir os termos do glossário em formato de card.
-    - `📄 Filters.js` componente de filtros usados para filtrar os termos do glossário. Inclui um campo de busca e um seletor de categorias.
-    - `📄 Footer.js` componente de rodapé exibido na parte inferior do site.
-    - `📄 Glossary.js` componente utilizado para exibição do glossário.
-    - `📄 Header.js` componente de cabeçalho exibido na parte superior do site.
-  - `📁 data/` armazena dados do projeto.
-    - `📄 termsData.js` arquivo contendo um array com os termos do glossário.
-  - `📁 styles/` contém arquivos de estililização.
-    - `📄 App.css` arquivo de estilos para o componente App.js.
-    - `📄 index.css` arquivo dos estilos principais do projeto, incluindo importações das fontes, variáveis CSS e os estilos para elementos base.
-  - `📄 App.js` componente principal da aplicação.
-  - `📄 App.test.js` contém os testes para o componente App.js.
-  - `📄 index.js` ponto de entrada do aplicativo, onde o ReactDOM.render é chamado para renderizar a aplicação na página HTML.
-  - `📄 reportWebVitals.js` arquivo de relatório de métricas de desempenho da web.
-  - `📄 setup.js` arquivo de configuração para os testes.
 
 ## ⚡ Como rodar o projeto
 Siga os passos abaixo para executar o projeto em sua máquina local:
