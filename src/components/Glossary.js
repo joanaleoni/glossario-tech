@@ -42,6 +42,28 @@ function Glossary() {
     return filteredTerms.slice(startIndex, endIndex);
   }, [filteredTerms, startIndex, endIndex]);
 
+  const renderTerms = () => {
+    if (visibleTerms.length === 0) {
+      return (
+        <div className="no-results-container">
+          <p>
+            Que pena! Parece que não há nenhum resultado para o termo <span>"{searchTerm}"</span>.
+          </p>
+          <p>
+            <a target="_blank" rel="noreferrer" href="https://forms.gle/xux29vYtsoakbdZg9">Clique aqui</a> para sugerir a inclusão desse termo no GlossárioTech.
+          </p>
+        </div>
+      );
+    }
+
+    return visibleTerms.map((term, index) => (
+      <div className="term" key={index}>
+        <h3>{term.name}</h3>
+        <p>{term.description}</p>
+      </div>
+    ));
+  };
+
   return (
     <>
       <div className="container" data-testid="glossary">
@@ -57,12 +79,7 @@ function Glossary() {
         />
 
         <div className="cards">
-          {visibleTerms.map((term, index) => (
-            <div className="term" key={index}>
-              <h3>{term.name}</h3>
-              <p>{term.description}</p>
-            </div>
-          ))}
+          {renderTerms()}
         </div>
       </div>
     </>

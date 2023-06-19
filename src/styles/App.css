@@ -50,7 +50,6 @@ h3 {
   padding: 2.3rem;
 }
 
-
 /* Filters */
 .filter-container {
   display: flex;  
@@ -173,6 +172,32 @@ h3 {
   margin-bottom: 0;
 }
 
+/* Term not found */
+.no-results-container p {
+  margin-bottom: 2rem;
+  white-space: nowrap;
+}
+
+.no-results-container span {
+  color: var(--color-primary-light);
+  font-weight: bold;
+}
+
+.no-results-container a {
+  color: var(--color-primary-light);
+  font-weight: bold;
+  text-decoration: none;
+  background-image: linear-gradient(to right, var(--color-primary) 0%, var(--color-primary) 100%);
+  background-size: 0% 2px; 
+  background-position: 0 110%; 
+  background-repeat: no-repeat;
+  transition: background-size 0.7s ease-in;
+}
+
+.no-results-container a:hover {
+  background-size: 100% 2px;
+}
+
 /* Footer */
 .footer {
   background-color: var(--color-primary);
@@ -198,7 +223,6 @@ h3 {
 
 .footer .author a {
   text-decoration: none;
-  border-bottom: .2rem solid transparent;
   transition: all 0.8s ease-in-out;
 }
 
