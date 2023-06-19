@@ -1,8 +1,7 @@
 ![glossariotech](https://github.com/joanaleoni/glossario-tech/assets/77423877/07014335-487c-4593-8772-cdfce346a33c)
 
-Plataforma online que reúne termos técnicos utilizados no campo da tecnologia. Cobrindo diferentes disciplinas, como desenvolvimento de software, DevOps, IA e muito mais, o GlossárioTech é um recurso para profissionais, estudantes e entusiastas da área que desejam expandir seu vocabulário tecnológico. **E aí, qual termo você vai desvendar hoje?**
+Plataforma online que reúne termos técnicos utilizados no campo da tecnologia. Cobrindo diferentes disciplinas, como desenvolvimento de software, DevOps, IA e muito mais, o GlossárioTech é um recurso para profissionais, estudantes e entusiastas da área que desejam expandir seu vocabulário tecnológico. **E aí, qual termo você vai desvendar hoje?**  
 
-## 🔗 Acesse
 Navegue pelos termos de forma fácil e intuitiva em [glossariotech.netlify.app](https://glossariotech.netlify.app).
 
 ## ⭐ Sugira novos termos
