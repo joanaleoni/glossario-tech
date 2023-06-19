@@ -11,11 +11,13 @@ test('renders header component', () => {
 test('renders glossary component', () => {
   render(<App />);
   const glossaryElement = screen.getByTestId('glossary');
-  // const cardElement = screen.getByTestId('card-component');
-  // const filtersElement = screen.getByTestId('filters-component');
-  expect(glossaryElement).toBeInTheDocument();
-  // expect(cardElement).toBeInTheDocument();
-  // expect(filtersElement).toBeInTheDocument();
+  expect(glossaryElement).toBeInTheDocument();  
+});
+
+test('renders filters component', () => {
+  render(<App />);
+  const filtersElement = screen.getByTestId('filters-component');
+  expect(filtersElement).toBeInTheDocument();
 });
 
 test('renders footer component', () => {

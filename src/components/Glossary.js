@@ -44,7 +44,7 @@ function Glossary() {
 
   return (
     <>
-      <div className="container" id="glossary">
+      <div className="container" data-testid="glossary">
         <Filters
           searchTerm={searchTerm}
           selectedCategory={selectedCategory}

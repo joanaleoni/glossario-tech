@@ -20,7 +20,7 @@ function Filters({
   };
 
   return (
-    <div className="filter-container" id="filters-component">
+    <div className="filter-container" data-testid="filters-component">
       <div className="search-container">
         <input
           type="text"

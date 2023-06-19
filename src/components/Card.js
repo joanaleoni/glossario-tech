@@ -2,7 +2,7 @@ import React from 'react';
 
 function Card({ term }) {
   return (
-    <div className="term" id="card-component">
+    <div className="term">
       <h3>{term.name}</h3>
       <p>{term.description}</p>
     </div>
