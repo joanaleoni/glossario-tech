@@ -96,4 +96,4 @@ Este projeto está licenciado sob a [MIT License](https://opensource.org/license
 – ET Bilu, 2010</em></div>
 
 <br>
-<div align="right">❤️ Feito com carinho por <a href="https://github.com/joanaleoni">Joana Leoni</a></div>
+<div align="right">💜 Feito com carinho por <a href="https://github.com/joanaleoni">Joana Leoni</a></div>
