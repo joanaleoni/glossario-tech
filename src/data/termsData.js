@@ -26,19 +26,14 @@ const termsData = [
     description: 'Uma solicitação ou instrução em uma linguagem de consulta (como SQL) para recuperar ou manipular dados em um banco de dados.' 
   },
   { 
-    name: 'MariaDB', 
-    categories: ['Banco de dados'], 
-    description: 'Um sistema de gerenciamento de banco de dados relacional de código aberto, que se originou como um fork do MySQL.' 
-  },
-  { 
     name: 'PostgreSQL', 
     categories: ['Banco de dados'], 
-    description: 'Um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua confiabilidade, robustez e recursos avançados.' 
+    description: 'Um sistema de gerenciamento de banco de dados relacional de código aberto, que oferece recursos de armazenamento, recuperação, manipulação e processamento de dados, incluindo suporte a SQL. Conhecido por sua confiabilidade, escalabilidade e recursos avançados.' 
   },
   { 
     name: 'MySQL', 
     categories: ['Banco de dados'], 
-    description: 'Um sistema de gerenciamento de banco de dados relacional de código aberto, amplamente utilizado em aplicações web e de software.' 
+    description: 'Um sistema de gerenciamento de banco de dados relacional de código aberto, que oferece recursos de armazenamento, recuperação, manipulação e processamento de dados, incluindo suporte a SQL. Conhecido por sua facilidade de uso, desempenho rápido e escalabilidade.' 
   },
   { 
     name: 'Banco de dados', 
@@ -46,14 +41,14 @@ const termsData = [
     description: 'Um sistema organizado para armazenar e gerenciar dados de forma estruturada.' 
   },
   { 
-    name: 'SQL', 
+    name: 'SQL (Structured Query Language)', 
     categories: ['Banco de dados'], 
-    description: 'Structuree Query Language. Linguagem de programação usada para gerenciar e manipular bancos de dados relacionais.' 
+    description: 'Linguagem de programação usada para gerenciar e manipular bancos de dados relacionais. Permite a criação, consulta, atualização e exclusão de dados em um banco de dados.' 
   },
   { 
     name: 'MongoDB', 
     categories: ['Banco de dados'], 
-    description: 'Um banco de dados NoSQL orientado a documentos, que armazena dados no formato JSON-like (BSON) e oferece alta flexibilidade e escalabilidade.' 
+    description: 'Um banco de dados NoSQL orientado a documentos, que armazena dados no formato JSON-like (BSON), permitindo uma modelagem de dados mais dinâmica.' 
   },
   { 
     name: 'Redis', 
@@ -65,6 +60,11 @@ const termsData = [
     name: 'Normalização', 
     categories: ['Banco de dados'], 
     description: 'Processo de projetar e organizar a estrutura de um banco de dados em diferentes níveis, visando eliminar a redundância e garantir a integridade dos dados.' 
+  },
+  {
+    name: 'Indexação',
+    categories: ['Banco de dados'],
+    description: 'Processo de organizar dados de forma eficiente para facilitar a recuperação e busca de informações em um banco de dados. Envolve a criação de estruturas de dados especiais que permitem acesso rápido aos registros com base em critérios específicos, como chaves primárias ou outros campos relevantes.'
   },
   { 
     name: 'Integridade referencial', 
@@ -138,8 +138,51 @@ const termsData = [
     categories: ['Design'],
     description: 'O estudo e seleção de fontes tipográficas adequadas para uso em um design, levando em consideração a legibilidade, a hierarquia e o estilo desejado.'
   },
-    
-    
+  {
+    name: 'Grid',
+    categories: ['Design'],
+    description: 'Uma estrutura visual composta por linhas e colunas que ajuda a organizar e alinhar elementos em um design, facilitando a criação de layouts equilibrados e consistentes.'
+  },
+  {
+    name: 'Paleta de cores',
+    categories: ['Design'],
+    description: 'A seleção de cores utilizada em um design, que inclui cores primárias, secundárias e de destaque, além de variantes tonais e de contraste.'
+  },
+  {
+    name: 'Hierarquia Visual',
+    categories: ['Design'],
+    description: 'A organização e disposição dos elementos visuais em um design para comunicar a importância relativa e a sequência de informações, geralmente utilizando diferenças de tamanho, cor, contraste e posição.'
+  },
+  {
+    name: 'Espaçamento',
+    categories: ['Design'],
+    description: 'O uso intencional de espaços em branco entre elementos de design para criar equilíbrio, legibilidade e foco visual adequados.'
+  },
+  {
+    name: 'Contraste',
+    categories: ['Design'],
+    description: 'A diferença entre elementos de design, como cores, tamanhos, formas ou texturas, que cria distinção e destaque visual, aumentando a legibilidade e a percepção.'
+  },
+  {
+    name: 'Índice de Cliques (Click-Through Rate - CTR)',
+    categories: ['Design', 'Web'],
+    description: 'A métrica que mede a proporção de cliques em um determinado elemento de design ou anúncio em relação ao número total de visualizações, utilizado para avaliar a eficácia e o envolvimento dos usuários.'
+  },
+  {
+    name: 'Wireflow',
+    categories: ['Design'],
+    description: 'Representação visual que combina elementos de wireframes e fluxos de usuário, mostrando a estrutura da página e a sequência de interações em um design de interface.'
+  },
+  {
+    name: 'Layout',
+    categories: ['Design'],
+    description: 'Refere-se à organização visual e estrutural dos elementos em um design, como texto, imagens e botões, com o objetivo de proporcionar uma experiência esteticamente agradável e funcional ao usuário.'
+  },
+  {
+    name: 'Fluxos de usuário (User Flow)',
+    categories: ['Design'],
+    description: 'Sequência de ações e interações que um usuário realiza em um site, aplicativo ou sistema digital para atingir um objetivo específico, mapeando o caminho percorrido e identificando etapas-chave ao longo do processo.'
+  },
   //DevOps
   {
     name: 'DevOps',
@@ -168,6 +211,11 @@ const termsData = [
     description: 'Plataforma de virtualização de contêineres que permite empacotar e distribuir aplicativos com suas dependências em contêineres isolados, fornecendo portabilidade e escalabilidade para ambientes de desenvolvimento e produção.'
   },
   {
+    name: 'Kubernetes',
+    categories: ['DevOps'],
+    description: 'Plataforma de código aberto usada para automatizar a implantação, o dimensionamento e o gerenciamento de aplicativos em contêineres. Permite a orquestração eficiente de contêineres em um ambiente distribuído.'
+  },
+  {
     name: 'Monitoramento de aplicações',
     categories: ['DevOps'],
     description: 'Prática de coletar dados sobre o desempenho e a disponibilidade de um aplicativo em tempo real, permitindo a detecção e solução proativa de problemas.'
@@ -177,6 +225,27 @@ const termsData = [
     categories: ['DevOps'],
     description: 'Emulação de um ambiente computacional completo, permitindo a criação, gerenciamento e provisionamento ágil e automatizado de ambientes de desenvolvimento e produção.'
   },
+  {
+    name: 'IaC (Infrastructure as Code)',
+    categories: ['DevOps', 'Redes e infraestrutura'],
+    description: 'Uma abordagem para gerenciar e provisionar infraestrutura de TI por meio de código, permitindo a automação e o versionamento da infraestrutura.'
+  },
+  {
+    name: 'Orquestração',
+    categories: ['DevOps'],
+    description: 'O processo de coordenar e gerenciar tarefas, serviços e componentes em um ambiente de TI distribuído e complexo.'
+  },
+  {
+    name: 'Automação de implantação',
+    categories: ['DevOps'],
+    description: 'A prática de automatizar o processo de implantação de software em diferentes ambientes, reduzindo erros e acelerando a entrega de novas versões.'
+  },
+  {
+    name: 'Monitoramento de infraestrutura',
+    categories: ['DevOps', 'Redes e infraestrutura'],
+    description: 'O acompanhamento e coleta de dados sobre a infraestrutura de TI, como servidores, redes e bancos de dados, para garantir o desempenho, a disponibilidade e a segurança do ambiente.'
+  },
+  
     
   // Formatos de dados
   {
@@ -290,6 +359,11 @@ const termsData = [
     categories: ['Fundamentos de computação'], 
     description: 'Um ambiente de linha de comando que permite aos usuários interagirem com um sistema operacional, executando comandos e scripts.' 
   },
+  {
+    name: 'Big O notation',
+    categories: ['Fundamentos de computação'],
+    description: 'Notação usada para descrever a eficiência de algoritmos em termos de tempo de execução e uso de recursos. Fornece uma estimativa do pior caso de tempo e espaço necessários para executar um algoritmo à medida que o tamanho da entrada aumenta.'
+  },
 
   // IA
   {
@@ -331,6 +405,26 @@ const termsData = [
     name: 'Reconhecimento de padrões',
     categories: ['Inteligência Artificial'],
     description: 'Processo de identificar e classificar padrões em dados, com o objetivo de extrair informações relevantes e tomar decisões ou fazer previsões.'
+  },
+  {
+    name: 'Redes Neurais Convolucionais (Convolutional Neural Networks)',
+    categories: ['Inteligência Artificial'],
+    description: 'Arquiteturas de redes neurais projetadas para processar dados em forma de grade, como imagens, utilizando camadas de convolução para extrair características relevantes.'
+  },
+  {
+    name: 'Sistemas de recomendação',
+    categories: ['Inteligência Artificial'],
+    description: 'Sistemas que fornecem recomendações personalizadas para usuários com base em seus dados de preferência, histórico de interações ou comportamentos similares de outros usuários.'
+  },
+  {
+    name: 'Chatbot',
+    categories: ['Inteligência Artificial'],
+    description: 'Um programa de computador que utiliza IA para simular uma conversa humana, interagindo com usuários por meio de mensagens de texto ou voz.'
+  },
+  {
+    name: 'Algoritmos genéticos',
+    categories: ['Inteligência Artificial'],
+    description: 'Algoritmos inspirados no processo de seleção natural que utilizam conceitos de evolução para otimizar soluções em problemas de busca e otimização.'
   },
     
   // Modelagem de software
@@ -418,6 +512,52 @@ const termsData = [
     name: 'Benchmarketing',
     categories: ['Negócios e desenvolvimento de produtos'],
     description: 'Processo de comparar as estratégias e resultados de marketing de uma empresa em relação aos concorrentes ou referências do mercado, buscando identificar melhores práticas e oportunidades de melhoria.'
+  },
+  {
+    name: 'Ciclo de vida do produto',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'As diferentes etapas pelas quais um produto passa, desde o conceito inicial, desenvolvimento, lançamento, crescimento, maturidade até a eventual retirada do mercado.'
+  },
+  {
+    name: 'Escopo',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'A definição e o conjunto de funcionalidades, requisitos e objetivos de um projeto ou produto. Determina o que está dentro e fora do âmbito do trabalho.'
+  },
+  {
+    name: 'KPI (Key Performance Indicator)',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'Indicador-chave de desempenho que mede o progresso em relação a metas e objetivos específicos de um projeto, produto ou organização.'
+  },
+  {
+    name: 'Scrum',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'Um framework ágil para gerenciamento de projetos que enfatiza a colaboração, a transparência e a entrega iterativa de software.'
+  },
+  {
+    name: 'Validação',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'O processo de testar e verificar se um produto, serviço ou ideia atende às necessidades e expectativas dos clientes e usuários.'
+  },
+  {
+    name: 'OKR (Objectives and Key Results)',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'Metodologia de definição e acompanhamento de metas que ajuda as equipes a alinhar esforços, estabelecer objetivos claros e mensuráveis, e acompanhar os resultados alcançados.'
+  },
+  {
+    name: 'Metodologias ágeis',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'Abordagens de desenvolvimento de software que enfatizam a colaboração, a flexibilidade, a adaptação contínua e a entrega de valor ao cliente.'
+  },
+  {
+    name: 'Kanban',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'Método de gerenciamento de fluxo de trabalho que permite acompanhar o progresso das tarefas de forma clara e visual. Utiliza um quadro com colunas que representam as etapas do processo, onde as tarefas são movidas de uma coluna para outra à medida que são concluídas.'
+  },
+  
+  {
+    name: 'Lean',
+    categories: ['Negócios e desenvolvimento de produtos'],
+    description: 'Filosofia e abordagem de gestão que visa maximizar o valor entregue ao cliente, eliminando desperdícios e otimizando os processos. Baseia-se em princípios como identificação e eliminação de atividades desnecessárias, melhoria contínua, envolvimento dos colaboradores e foco na qualidade.'
   },
     
   // Programação e desenvolvimento
@@ -540,7 +680,7 @@ const termsData = [
   },
   {
     name: 'Backlog',
-    categories: ['Programação e desenvolvimento'],
+    categories: ['Programação e desenvolvimento', 'Negócios e desenvolvimento de produtos'],
     description: 'Uma lista de tarefas ou requisitos a serem realizados em um projeto, geralmente organizados por prioridade.'
   },
   {
@@ -584,9 +724,9 @@ const termsData = [
     description: 'O processo de criação da lógica e das funcionalidades de um site ou aplicativo, que ocorre nos bastidores e geralmente envolve o gerenciamento de dados.'
   },
   {
-    name: 'Web service',
+    name: 'Serviço web',
     categories: ['Programação e desenvolvimento'],
-    description: 'Um sistema de software projetado para permitir a comunicação entre diferentes aplicativos ou sistemas por meio de protocolos da web.'
+    description: 'Componente de software que pode ser acessado pela rede utilizando protocolos da web para oferecer funcionalidades específicas. Os serviços web permitem a integração de sistemas distribuídos e a comunicação entre diferentes aplicativos através de intefaces personalizadas.'
   },
   {
     name: 'Landing Page',
@@ -660,11 +800,6 @@ const termsData = [
     description: 'Dynamic Host Configuration Protocol. Protocolo de rede que permite que dispositivos em uma rede obtenham automaticamente um endereço IP e outras configurações de rede, como máscara de sub-rede, gateway padrão e servidores DNS, de um servidor DHCP centralizado.' 
   },
   { 
-    name: 'DNS', 
-    categories: ['Redes e infraestrutura', 'Web'], 
-    description: 'Domain Name System. Um sistema que traduz nomes de domínio em endereços IP para permitir a localização de recursos na Internet.' 
-  },
-  { 
     name: 'LAN', 
     categories: ['Redes e infraestrutura'], 
     description: 'Local Area Network. Uma rede de computadores que abrange uma área geográfica limitada, como um escritório, uma residência ou um campus.' 
@@ -715,24 +850,49 @@ const termsData = [
     description: 'Protocolo de comunicação responsável por identificar e encaminhar pacotes de dados em uma rede.'
   },
   {
-    name: 'TCP/IP',
-    categories: ['Redes e infraestrutura'],
-    description: 'Transmission Control Protocol / Internet Protocol. Conjunto de protocolos de comunicação utilizados para a transmissão de dados na Internet.'
+    name: 'TCP/IP (Transmission Control Protocol/Internet Protocol)',
+    categories: ['Redes e infraestrutura', 'Web'],
+    description: 'Conjunto de protocolos de comunicação usado para conectar dispositivos em redes de computadores, incluindo a Internet. O TCP/IP define como os dados são enviados, roteados e recebidos na Internet.'
   },
   {
     name: 'Ethernet',
     categories: ['Redes e infraestrutura'],
-    description: 'Uma tecnologia de rede com fio amplamente utilizada para conexões de área local (LAN), que define padrões para a transmissão de dados em cabos de par trançado ou fibras ópticas.'
+    description: 'Tecnologia de rede com fio amplamente utilizada para conexões de área local (LAN), que define padrões para a transmissão de dados em cabos de par trançado ou fibras ópticas.'
   },
   {
-    name: 'FTP',
-    categories: ['Redes e infraestrutura'],
-    description: 'File Transfer Protocol. Protocolo utilizado para transferir arquivos pela Internet.'
+    name: 'FTP (File Transfer Protocol)',
+    categories: ['Redes e infraestrutura', 'Web'],
+    description: 'Protocolo utilizado para transferir arquivos entre um cliente e um servidor na Internet, comumente usado para upload e download de arquivos em um servidor web.'
+  },
+  {
+    name: 'SMTP (Simple Mail Transfer Protocol)',
+    categories: ['Redes e infraestrutura', 'Web'],
+    description: 'Protocolo usado para enviar e entregar e-mails através da Internet, que define as regras para a comunicação entre servidores de e-mail.'
+  },
+  {
+    name: 'POP (Post Office Protocol)',
+    categories: ['Redes e infraestrutura', 'Web'],
+    description: 'Um protocolo de recebimento de e-mails utilizado pelos clientes de e-mail para recuperar mensagens de um servidor de e-mail remoto.'
+  },
+  {
+    name: 'IMAP (Internet Message Access Protocol)',
+    categories: ['Redes e infraestrutura', 'Web'],
+    description: 'Um protocolo de recebimento de e-mails que permite aos clientes de e-mail acessar e gerenciar mensagens armazenadas em um servidor de e-mail remoto.'
+  },
+  {
+    name: 'DNS (Domain Name System)',
+    categories: ['Redes e infraestrutura', 'Web'],
+    description: 'Sistema responsável por traduzir nomes de domínio legíveis por humanos em endereços IP numéricos usados pelos computadores para localizar recursos na Internet.'
+  },
+  {
+    name: 'WebSocket',
+    categories: ['Redes e infraestrutura', 'Web'],
+    description: 'Protocolo de comunicação bidirecional que permite uma conexão persistente entre um cliente e um servidor, permitindo a transmissão de dados em tempo real.'
   },
   {
     name: 'Gateway',
     categories: ['Redes e infraestrutura'],
-    description: 'Um dispositivo ou software que atua como ponto de entrada ou saída para uma rede, permitindo a comunicação entre diferentes redes ou protocolos.'
+    description: 'Dispositivo ou software que atua como ponto de entrada ou saída para uma rede, permitindo a comunicação entre diferentes redes ou protocolos.'
   },
   {
     name: 'Hotspot',
@@ -826,6 +986,46 @@ const termsData = [
     categories: ['Segurança'],
     description: 'Um dispositivo ou aplicativo gerador de códigos únicos e temporários, usado para autenticação de dois fatores e fortalecimento da segurança de contas e sistemas.'
   },
+  {
+    name: 'Autenticação',
+    categories: ['Segurança'],
+    description: 'Processo de verificação da identidade de um usuário ou sistema para garantir que apenas entidades autorizadas tenham acesso a recursos protegidos.'
+  },
+  {
+    name: 'Princípios de Segurança da Informação',
+    categories: ['Segurança'],
+    description: 'Diretrizes fundamentais que orientam a proteção dos dados e sistemas de informação contra ameaças. São eles: confidencialidade, integridade, disponibilidade, autenticidade e não-repúdio.'
+    },
+    {
+    name: 'Confidencialidade',
+    categories: ['Segurança'],
+    description: 'Princípio que visa garantir que as informações sejam acessíveis apenas por pessoas autorizadas, protegendo-as contra divulgação não autorizada.'
+    },
+    {
+    name: 'Integridade',
+    categories: ['Segurança'],
+    description: 'Princípio que assegura que as informações sejam precisas, completas e protegidas contra alterações não autorizadas ou acidentais.'
+    },
+    {
+    name: 'Disponibilidade',
+    categories: ['Segurança'],
+    description: 'Princípio que garante que as informações e os recursos relacionados estejam disponíveis para uso sempre que necessário, sem interrupções indevidas.'
+    },
+    {
+    name: 'Autenticidade',
+    categories: ['Segurança'],
+    description: 'Princípio que confirma a origem e a autenticidade das informações, garantindo que elas sejam provenientes de fontes confiáveis e não tenham sido alteradas durante a transmissão ou armazenamento.'
+    },
+    {
+    name: 'Não-repúdio ou irretratabilidade',
+    categories: ['Segurança'],
+    description: 'Princípio que impede que os participantes neguem a autoria ou o envio de informações, fornecendo mecanismos de prova que tornam as ações rastreáveis e irrefutáveis.'
+    },
+    {
+    name: 'Segurança da Informação',
+    categories: ['Segurança'],
+    description: 'Campo multidisciplinar que se concentra na proteção dos ativos de informação contra ameaças.'
+    },
 
   // Testes
   {
@@ -913,7 +1113,7 @@ const termsData = [
   { 
     name: 'Realidade Virtual (VR)', 
     categories: ['Tecnologias emergentes'], 
-    description: 'Um ambiente virtual criado por meio de tecnologia computacional, que simula a presença física do usuário em um ambiente gerado por computador.' 
+    description: 'Ambiente virtual criado por meio de tecnologia computacional, que simula a presença física do usuário em um ambiente gerado por computador.' 
   },
   { 
     name: 'Realidade Aumentada (AR)', 
@@ -923,14 +1123,14 @@ const termsData = [
   { 
     name: 'Blockchain', 
     categories: ['Tecnologias emergentes'], 
-    description: 'Um sistema de registro e verificação de transações digitais descentralizado, transparente e seguro, que utiliza criptografia e distribuição em rede para garantir a integridade dos dados.' 
+    description: 'Sistema de registro e verificação de transações digitais descentralizado, transparente e seguro, que utiliza criptografia e distribuição em rede para garantir a integridade dos dados.' 
   },
 
   // Versionamento
   {
     name: 'Git',
     categories: ['Versionamento'],
-    description: 'Um sistema de controle de versão usado para gerenciar e controlar as alterações em projetos de desenvolvimento de software.'
+    description: 'Sistema de controle de versão usado para gerenciar e controlar as alterações em projetos de desenvolvimento de software.'
   },
   {
     name: 'Dar push',
@@ -943,7 +1143,7 @@ const termsData = [
     description: 'Obter as alterações feitas em um repositório remoto e incorporá-las ao repositório local, mantendo-o atualizado.'
   },
   {
-    name: 'Pull Request',
+    name: 'Pull Request (PR)',
     categories: ['Versionamento'],
     description: 'Um pedido de incorporação de alterações de um branch ou fork para outro branch, geralmente usado em fluxos de trabalho de desenvolvimento colaborativo.'
   },  
@@ -960,12 +1160,12 @@ const termsData = [
   {
     name: 'Conflito de merge',
     categories: ['Versionamento'],
-    description: 'Uma situação em que as alterações em dois branches conflitam entre si, exigindo a resolução manual das diferenças antes de realizar o merge.'
+    description: 'Situação em que as alterações em dois branches conflitam entre si, exigindo a resolução manual das diferenças antes de realizar o merge.'
   },
   {
     name: 'Arquivo .gitignore',
     categories: ['Versionamento'],
-    description: 'Um arquivo especial em um repositório Git que lista os arquivos e diretórios que devem ser ignorados pelo controle de versão.'
+    description: 'Arquivo especial em um repositório Git que lista os arquivos e diretórios que devem ser ignorados pelo controle de versão.'
   },
   {
     name: 'Versionamento',
@@ -980,7 +1180,7 @@ const termsData = [
   {
     name: 'GitFlow',
     categories: ['Versionamento'],
-    description: 'Um modelo de fluxo de trabalho de versionamento baseado no Git, que define um conjunto de diretrizes para a organização de branches e o gerenciamento de lançamentos em projetos de software.'
+    description: 'Modelo de fluxo de trabalho de versionamento baseado no Git, que define um conjunto de diretrizes para a organização de branches e o gerenciamento de lançamentos em projetos de software.'
   },
   {
     name: 'Repositório local',
@@ -1000,7 +1200,7 @@ const termsData = [
   {
     name: 'GitHub',
     categories: ['Programação e desenvolvimento', 'Versionamento'],
-    description: 'Uma plataforma de hospedagem de código-fonte baseada em Git, usada para controle de versão e colaboração em projetos de desenvolvimento de software.'
+    description: 'Plataforma de hospedagem de código-fonte baseada em Git, usada para controle de versão e colaboração em projetos de desenvolvimento de software.'
   },
 
   // Web
@@ -1027,18 +1227,47 @@ const termsData = [
   {
     name: 'Hipermídia',
     categories: ['Web'],
-    description: 'Um sistema de informação que combina diferentes formas de mídia, como texto, imagens, áudio e vídeo, interligados por hiperlinks.'
+    description: 'Sistema de informação que combina diferentes formas de mídia, como texto, imagens, áudio e vídeo, interligados por hiperlinks.'
   },
-
   {
-    name: 'HTTPS / HTTP',
-    categories: ['Web'],
-    description: 'Hypertext Transfer Protocol Secure / Hypertext Transfer Protocol. Protocolos de comunicação utilizados na World Wide Web para transferência de dados entre clientes e servidores.'
+    name: 'HTTP (Hypertext Transfer Protocol)',
+    categories: ['Web', 'Redes e infraestrutura'],
+    description: 'Protocolo de comunicação usado para transferir informações na World Wide Web. É a base para a comunicação entre clientes (navegadores) e servidores web.'
+  },
+  {
+    name: 'HTTPS (Hypertext Transfer Protocol Secure)',
+    categories: ['Web', 'Redes e infraestrutura'],
+    description: 'Versão segura do protocolo HTTP que utiliza criptografia para proteger a comunicação entre clientes e servidores.'
   },
   {
     name: 'SEO',
     categories: ['Web'],
     description: 'Search Engine Optimization. O processo de otimização de um site para melhorar sua visibilidade e classificação nos resultados de busca, aumentando o tráfego orgânico.'
+  },
+  {
+    name: 'CMS (Content Management System)',
+    categories: ['Web'],
+    description: 'Sistema que oferece uma interface amigável para criar, gerenciar e publicar conteúdo na web, mesmo sem conhecimentos avançados em programação.'
+  },
+  {
+    name: 'REST (Representational State Transfer)',
+    categories: ['Web', 'Programação e desenvolvimento'],
+    description: 'Estilo arquitetural para projetar serviços web que utiliza os princípios fundamentais da web, como recursos identificáveis por URLs e operações baseadas em HTTP.'
+  },
+  {
+    name: 'World Wide Web (WWW)',
+    categories: ['Web'],
+    description: 'Sistema de documentos interconectados e recursos na Internet que podem ser acessados através de navegadores. É uma das principais aplicações da internet e permite o compartilhamento e acesso a informações por meio de hiperlinks..'
+  },
+  {
+    name: 'SOAP (Simple Object Access Protocol)',
+    categories: ['Web', 'Programação e desenvolvimento'],
+    description: 'Protocolo baseado em XML utilizado para troca de informações estruturadas em serviços web. Define um formato de mensagem e regras para comunicação entre aplicativos distribuídos.'
+  },
+  {
+    name: 'API REST (Application Programming Interface - Representational State Transfer)',
+    categories: ['Web', 'Programação e desenvolvimento'],
+    description: 'Estilo arquitetural que define um conjunto de princípios e restrições para criar serviços web que sejam escaláveis, confiáveis e de fácil integração. As APIs RESTful utilizam os métodos HTTP para realizar operações em recursos representados como URLs.'
   },
 ];
 
