@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import termsData from '../data/termsData';
-import Header from './Header';
-import Footer from './Footer';
-import '../App.css';
+import '../styles/App.css';
 import Filters from './Filters';
 
 const terms = termsData;
@@ -12,7 +10,6 @@ function Glossary() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
   const itemsPerPage = 9;
 
   const handleSearchChange = (event) => {
@@ -23,14 +20,6 @@ function Glossary() {
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
     setCurrentPage(1);
-  };
-
-  const handlePrevPage = () => {
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-  };
-
-  const handleNextPage = () => {
-    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
   };
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -47,17 +36,7 @@ function Glossary() {
   }, [searchTerm, selectedCategory]);
 
   const totalItems = filteredTerms.length;
-  const calculatedTotalPages = Math.ceil(totalItems / itemsPerPage);
-
-  useEffect(() => {
-    setTotalPages(calculatedTotalPages);
-    setCurrentPage((prevPage) => {
-      if (prevPage > calculatedTotalPages) {
-        return calculatedTotalPages;
-      }
-      return prevPage;
-    });
-  }, [calculatedTotalPages]);
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   const visibleTerms = useMemo(() => {
     return filteredTerms.slice(startIndex, endIndex);
@@ -65,9 +44,7 @@ function Glossary() {
 
   return (
     <>
-      <Header />
-
-      <div className="container">
+      <div className="container" id="glossary">
         <Filters
           searchTerm={searchTerm}
           selectedCategory={selectedCategory}
@@ -76,8 +53,7 @@ function Glossary() {
           handleCategoryChange={handleCategoryChange}
           currentPage={currentPage}
           totalPages={totalPages}
-          handlePrevPage={handlePrevPage}
-          handleNextPage={handleNextPage}
+          setCurrentPage={setCurrentPage}
         />
 
         <div className="cards">
@@ -89,8 +65,6 @@ function Glossary() {
           ))}
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

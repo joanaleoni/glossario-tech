@@ -4,9 +4,8 @@
 :root {
   --color-primary: #6a398c;
   --color-primary-light: #804595;
-  --color-primary-lighter: #9c539c;
   --color-secondary: #c967a2;
-  --color-secondary-light: #d876a9;
+  --color-secondary-light: #fca2d0;
 
   --color-gray-light: #efefef;
 
@@ -33,3 +32,5 @@ body {
   background: var(--color-gray-light);
   color: var(--color-dark-text);
 }
+
+

@@ -9,11 +9,18 @@ function Filters({
   handleCategoryChange,
   currentPage,
   totalPages,
-  handlePrevPage,
-  handleNextPage,
+  setCurrentPage,
 }) {
+  const handlePrevPage = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
+
+  const handleNextPage = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  };
+
   return (
-    <div className="filter-container">
+    <div className="filter-container" id="filters-component">
       <div className="search-container">
         <input
           type="text"
