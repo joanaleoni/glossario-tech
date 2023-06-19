@@ -24,7 +24,7 @@ function Filters({
       <div className="search-container">
         <input
           type="text"
-          placeholder="Procure um termo"
+          placeholder="Em busca do termo perdido..."
           value={searchTerm}
           onChange={handleSearchChange}
           className="search-input"
