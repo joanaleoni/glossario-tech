@@ -44,11 +44,6 @@ O projeto segue a seguinte estrutura de diretórios:
 │ │ ├── 📄 index.js
 │ │ ├── 📄 reportWebVitals.js
 │ │ └── 📄 setup.js
-│ ├── 📄 .gitignore
-│ ├── 📄 LICENSE
-│ ├── 📄 package-lock.json
-│ ├── 📄 package.json
-│ └── 📄 README.md
 ```
 
 A estrutura do projeto consiste em:  
