@@ -71,7 +71,7 @@ h3 {
 .search-input {
   flex: 2;
   padding: 1.3rem;
-  border: .1rem solid #ccc;
+  border: 0 solid transparent;
   border-radius: .5rem;
 }
 
@@ -92,9 +92,19 @@ h3 {
 .category-select {
   width: 100%;
   padding: 1.3rem;
-  border: .1rem solid #ccc;
+  border: 0 solid transparent;
   border-radius: .5rem;
   color: #999;  
+  appearance: none;
+  background-image: url("../assets/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 1.5rem;
+  cursor: pointer;
+}
+
+.search-input:focus {
+  outline: none;
 }
 
 /* Pagination */
