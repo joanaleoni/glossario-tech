@@ -97,6 +97,8 @@ Para executar os testes e visualizar os resultados no terminal, navegue até o d
 ## ⚖️ Licença
 Este projeto está licenciado sob a [MIT License](https://opensource.org/license/mit/).
 
+<div align="center"><em>"Apenas que... Busquem conhecimento."<br>
+– ET Bilu, 2010</em></div>
 
-<div align="center"><em>"Apenas que... Busquem conhecimento."</em></div>
-<p align="center"><em>– ET Bilu, 2010</em></p>
+<br>
+<div align="right">❤️ Feito com carinho por <a href="https://github.com/joanaleoni">Joana Leoni</a></div>
