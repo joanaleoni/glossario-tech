@@ -20,10 +20,15 @@ const termsData = [
     categories: ['Banco de dados'], 
     description: 'Tipo de banco de dados que não utiliza a estrutura de tabelas e relacionamentos dos bancos de dados relacionais.' 
   },
-  { 
-    name: 'Query', 
-    categories: ['Banco de dados'], 
-    description: 'Uma solicitação ou instrução em uma linguagem de consulta (como SQL) para recuperar ou manipular dados em um banco de dados.' 
+  {
+    name: 'Query',
+    categories: ['Banco de dados'],
+    description: 'Comando escrito em uma linguagem de consulta específica, como SQL, para recuperar, inserir, atualizar ou excluir dados de um banco de dados.'
+  },
+  {
+    name: 'CRUD',
+    categories: ['Banco de dados'],
+    description: 'Acrônimo para Create (criar), Read (ler), Update (atualizar) e Delete (deletar). Representa as quatro operações básicas utilizadas em sistemas de gerenciamento de banco de dados.'
   },
   { 
     name: 'PostgreSQL', 
@@ -131,7 +136,7 @@ const termsData = [
   {
     name: 'Mockup',
     categories: ['Design'],
-    description: 'Uma representação visual estática de como será o design final de um produto ou sistema, geralmente criada para apresentar o visual e a aparência antes da implementação.'
+    description: 'Representação visual estática ou interativa de uma interface de usuário, geralmente utilizada para visualizar o layout, o fluxo de navegação e a aparência geral de um produto digital antes da implementação.'
   },
   {
     name: 'Tipografia',
@@ -183,6 +188,7 @@ const termsData = [
     categories: ['Design'],
     description: 'Sequência de ações e interações que um usuário realiza em um site, aplicativo ou sistema digital para atingir um objetivo específico, mapeando o caminho percorrido e identificando etapas-chave ao longo do processo.'
   },
+
   //DevOps
   {
     name: 'DevOps',
@@ -203,7 +209,7 @@ const termsData = [
   {
     name: 'Containerização',
     categories: ['DevOps'],
-    description: 'Uma técnica de empacotamento de software em contêineres isolados, que incluem todas as dependências necessárias para que o aplicativo seja executado de maneira consistente em diferentes ambientes.'
+    description: 'Técnica de empacotamento de software em contêineres isolados, que incluem todas as dependências necessárias para que o aplicativo seja executado de maneira consistente em diferentes ambientes.'
   },
   {
     name: 'Docker',
@@ -308,7 +314,7 @@ const termsData = [
   {
     name: 'Terminal',
     categories: ['Fundamentos de computação'],
-    description: 'Um programa de computador que permite aos usuários interagir com o sistema operacional por meio de comandos de texto.'
+    description: 'Programa de computador que permite aos usuários interagir com o sistema operacional por meio de comandos de texto.'
   },
   {
     name: 'Software',
@@ -328,7 +334,7 @@ const termsData = [
   {
     name: 'Hard Disk (HD)',
     categories: ['Fundamentos de computação'],
-    description: 'Um dispositivo de armazenamento de dados magnético utilizado em computadores para armazenar permanentemente informações digitais.'
+    description: 'Dispositivo de armazenamento de dados magnético utilizado em computadores para armazenar permanentemente informações digitais.'
   },
   { 
     name: 'CPU', 
@@ -419,7 +425,7 @@ const termsData = [
   {
     name: 'Chatbot',
     categories: ['Inteligência Artificial'],
-    description: 'Um programa de computador que utiliza IA para simular uma conversa humana, interagindo com usuários por meio de mensagens de texto ou voz.'
+    description: 'Programa de computador que utiliza IA para simular uma conversa humana, interagindo com usuários por meio de mensagens de texto ou voz.'
   },
   {
     name: 'Algoritmos genéticos',
@@ -431,7 +437,7 @@ const termsData = [
   { 
     name: 'User Story', 
     categories: ['Modelagem de software'], 
-    description: 'Uma técnica de descrição de requisitos de software em linguagem natural, centrada no usuário e expressa na forma de uma narrativa curta, capturando quem é o usuário, o que ele deseja alcançar e por quê.' 
+    description: 'Técnica de descrição de requisitos de software em linguagem natural, centrada no usuário e expressa na forma de uma narrativa curta, capturando quem é o usuário, o que ele deseja alcançar e por quê.' 
   },
 
   { 
@@ -456,7 +462,7 @@ const termsData = [
     description: 'Um diagrama que representa a estrutura modular de um sistema, identificando os componentes principais e as dependências entre eles.'
   },
   {
-    name: 'Diagrama de casos de uso',
+    name: 'Diagrama de caso de uso',
     categories: ['Modelagem de software'],
     description: 'Um diagrama que descreve a interação entre os atores (usuários ou sistemas externos) e o sistema, identificando os casos de uso e os cenários correspondentes.'
   },
@@ -500,8 +506,8 @@ const termsData = [
   },
   {
     name: 'Protótipo',
-    categories: ['Negócios e desenvolvimento de produtos'],
-    description: 'Uma versão inicial ou simplificada de um produto ou sistema, usada para validar conceitos, testar funcionalidades e obter feedback dos usuários antes da implementação completa.'
+    categories: ['Negócios e desenvolvimento de produtos', 'Design'],
+    description: 'Versão inicial ou simplificada de um produto ou sistema, usada para validar conceitos, testar funcionalidades e obter feedback dos usuários antes da implementação completa.'
   },
   {
     name: 'Persona',
@@ -577,16 +583,6 @@ const termsData = [
     description: 'A execução de um conjunto de comandos ou tarefas em sequência, sem intervenção direta do usuário.'
   },
   {
-    name: 'Java',
-    categories: ['Programação e desenvolvimento'],
-    description: 'Uma linguagem de programação popular, conhecida por sua portabilidade e ampla adoção em aplicações empresariais.'
-  },
-  {
-    name: 'JavaScript',
-    categories: ['Programação e desenvolvimento'],
-    description: 'Linguagem de programação usada principalmente para adicionar interatividade a uma página web.'
-  },
-  {
     name: 'DOM',
     categories: ['Programação e desenvolvimento'],
     description: 'Document Object Model. Uma representação em memória de um documento HTML, XML ou XHTML, que permite a interação e manipulação dos elementos e conteúdos do documento.'
@@ -610,6 +606,26 @@ const termsData = [
     name: 'Função', 
     categories: ['Programação e desenvolvimento'], 
     description: 'Um bloco de código que recebe um conjunto de entradas, realiza um conjunto de operações e retorna um resultado.' 
+  },  
+  {
+    name: 'Código-fonte',
+    categories: ['Programação e desenvolvimento'],
+    description: 'Conjunto de instruções escritas em uma linguagem de programação que compõem um programa de software. Define o comportamento do programa quando é executado.'
+  },
+  {
+    name: 'Compilação',
+    categories: ['Programação e desenvolvimento'],
+    description: 'Processo de tradução de código-fonte escrito em uma linguagem de programação para uma forma executável, geralmente em linguagem de máquina. Envolve a verificação de erros, otimização e geração de código binário ou bytecode.'
+  },
+  {
+    name: 'Interpretação',
+    categories: ['Programação e desenvolvimento'],
+    description: 'Processo de execução direta de um código-fonte escrito em uma linguagem de programação. Cada linha de código é analisada e executada em tempo real, sem a necessidade de compilar o código previamente.'
+  },
+  {
+    name: 'Breakpoint',
+    categories: ['Programação e desenvolvimento'],
+    description: 'Ponto de interrupção definido em um código-fonte que pausa a execução do programa durante a depuração, permitindo aos desenvolvedores examinar o estado do programa e realizar ações de depuração.'
   },
   { 
     name: 'Expressão booleana', 
@@ -623,11 +639,11 @@ const termsData = [
   { 
     name: 'Loop', 
     categories: ['Programação e desenvolvimento'], 
-    description: 'Uma estrutura de controle que permite que um conjunto de instruções seja repetido várias vezes até que uma condição seja atendida.' },
+    description: 'Estrutura de controle que permite que um conjunto de instruções seja repetido várias vezes até que uma condição seja atendida.' },
   { 
     name: 'Thread', 
     categories: ['Programação e desenvolvimento'], 
-    description: 'Um fluxo de execução em um programa. Vários threads podem ser executados simultaneamente dentro de um único processo.' },
+    description: 'Sequência de instruções que pode ser executada independentemente por um programa ou processo. É uma forma de realizar várias tarefas simultaneamente dentro de um programa, dividindo a execução em unidades menores e concorrentes.' },
   { 
     name: 'Programação orientada a objetos', 
     categories: ['Programação e desenvolvimento'], 
@@ -649,9 +665,9 @@ const termsData = [
     description: 'Um paradigma de programação baseado na organização lógica e sequencial de instruções para resolver um problema.' 
   },
   { 
-    name: 'Código hexadecimal', 
-    categories: ['Programação e desenvolvimento'], 
-    description: 'Uma representação numérica de base 16, amplamente utilizada para representar valores binários de forma mais compacta e legível.' 
+    name: 'Hexadecimal', 
+    categories: ['Programação e desenvolvimento', 'Fundamentos de computação'], 
+    description: 'Sistema numérico de base 16. Utiliza os símbolos de 0 a 9 e de A a F para representar valores, onde os dígitos de 0 a 9 representam os valores decimais de 0 a 9 e as letras de A a F representam os valores decimais de 10 a 15.' 
   },
   { 
     name: 'JVM', 
@@ -661,7 +677,7 @@ const termsData = [
   { 
     name: 'Array', 
     categories: ['Programação e desenvolvimento'], 
-    description: 'Uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo, acessíveis por meio de um índice.' 
+    description: 'Estrutura de dados que armazena uma coleção de elementos, acessíveis por meio de um índice.' 
   },
   {
     name: 'Desenvolvimento Mobile',
@@ -681,7 +697,7 @@ const termsData = [
   {
     name: 'Backlog',
     categories: ['Programação e desenvolvimento', 'Negócios e desenvolvimento de produtos'],
-    description: 'Uma lista de tarefas ou requisitos a serem realizados em um projeto, geralmente organizados por prioridade.'
+    description: 'Lista de tarefas ou requisitos a serem realizados em um projeto, geralmente organizados por prioridade.'
   },
   {
     name: 'Refatorar',
@@ -691,7 +707,7 @@ const termsData = [
   {
     name: 'Code Review',
     categories: ['Programação e desenvolvimento'],
-    description: 'Uma prática de desenvolvimento de software em que o código é revisado por outros membros da equipe para garantir sua qualidade, legibilidade e conformidade com as diretrizes.'
+    description: 'Prática de desenvolvimento de software em que o código é revisado por outros membros da equipe para garantir sua qualidade, legibilidade e conformidade com as diretrizes.'
   },
   {
     name: 'Fazer deploy',
@@ -758,11 +774,22 @@ const termsData = [
     categories: ['Programação e desenvolvimento'],
     description: 'O processo de encontrar, analisar e corrigir bugs em um programa de computador.'
   },
+  {
+    name: 'Tag (HTML)',
+    categories: ['Programação e desenvolvimento', 'Web'],
+    description: 'Elemento usado no HTML para definir e estruturar o conteúdo de uma página web. São delimitadas por "< >" e caracterizadas por um nome que representa o tipo de elemento, podendo conter atributos para características adicionais.'
+  },
+  {
+    name: 'HTML semântico',
+    categories: ['Programação e desenvolvimento', 'Web'],
+    description: 'Abordagem de marcação em HTML que utiliza tags apropriadas para representar a estrutura e o propósito dos elementos da página, melhorando a acessibilidade, a usabilidade e a compreensão do conteúdo pelos motores de busca.'
+  },
       
   // Redes e infraestrutura
   { 
     name: 'Servidor', 
-    categories: ['Programação e desenvolvimento', 'Redes e infraestrutura'], description: 'Um computador ou sistema que fornece serviços e recursos para outros computadores em uma rede.' 
+    categories: ['Programação e desenvolvimento', 'Redes e infraestrutura'], 
+    description: 'Um computador ou sistema que fornece serviços e recursos para outros computadores em uma rede.' 
   },
   {
     name: 'Mainframe',
@@ -832,7 +859,7 @@ const termsData = [
   { 
     name: 'Internet', 
     categories: ['Redes e infraestrutura'], 
-    description: 'Uma rede global de computadores interconectados que permite a comunicação e o compartilhamento de informações em escala global.' 
+    description: 'Rede global de computadores interconectados que permite a comunicação e o compartilhamento de informações em escala global.' 
   },
   { 
     name: 'Socket',
@@ -892,7 +919,7 @@ const termsData = [
   {
     name: 'Gateway',
     categories: ['Redes e infraestrutura'],
-    description: 'Dispositivo ou software que atua como ponto de entrada ou saída para uma rede, permitindo a comunicação entre diferentes redes ou protocolos.'
+    description: 'Dispositivo ou software que atua como ponto de entrada ou saída para uma rede, permitindo a comunicação entre diferentes redes ou protocolos. É responsável por rodar, filtrar e encaminhar o tráfego de dados de forma eficiente e segura.'
   },
   {
     name: 'Hotspot',
@@ -912,7 +939,7 @@ const termsData = [
   {
     name: 'Intranet',
     categories: ['Redes e infraestrutura'],
-    description: 'Uma rede privada que utiliza tecnologias e protocolos da Internet para compartilhar informações e recursos dentro de uma organização.'
+    description: 'Rede privada que utiliza tecnologias e protocolos da Internet para compartilhar informações e recursos dentro de uma organização.'
   },
   {
     name: 'Rede de computadores',
@@ -944,7 +971,7 @@ const termsData = [
   {
     name: 'Firewall',
     categories: ['Segurança'],
-    description: 'Um sistema de segurança de rede que monitora e controla o tráfego de rede com base em um conjunto de regras de segurança.'
+    description: 'Sistema de segurança de rede que monitora e controla o tráfego de rede com base em um conjunto de regras de segurança.'
   },
   {
     name: 'Malware',
@@ -1079,6 +1106,16 @@ const termsData = [
     description: 'Tipo de teste que mede e avalia o desempenho e a eficiência de um sistema em diferentes condições e cargas de trabalho, identificando possíveis gargalos e otimizações.'
   },
   {
+    name: 'QA (Quality Assurance) - Processo',
+    categories: ['Testes', 'Programação e desenvolvimento'],
+    description: 'Processo de garantia da qualidade em projetos de desenvolvimento de software, que envolve a realização de testes e análises para verificar se o produto atende aos requisitos e padrões estabelecidos.'
+  },
+  {
+    name: 'QA (Quality Assurance) - Profissional',
+    categories: ['Testes'],
+    description: 'Profissional responsável por garantir a qualidade dos produtos de software. Seu objetivo é assegurar que o software atenda aos padrões de qualidade e atenda às necessidades dos usuários.'
+    },
+  {
     name: 'Teste de aceitação',
     categories: ['Testes'],
     description: 'Tipo de teste realizado em colaboração com os stakeholders e usuários finais para verificar se o sistema atende aos requisitos e expectativas definidos, garantindo sua adequação ao uso pretendido.'
@@ -1131,6 +1168,16 @@ const termsData = [
     name: 'Git',
     categories: ['Versionamento'],
     description: 'Sistema de controle de versão usado para gerenciar e controlar as alterações em projetos de desenvolvimento de software.'
+  },
+  {
+    name: 'Commit',
+    categories: ['Versionamento'],
+    description: 'Ação de salvar as alterações realizadas em um repositório de código, registrando um ponto de referência. Permite acompanhar e revertar alterações quando necessário.'
+  },
+  {
+    name: 'Commit semântico',
+    categories: ['Versionamento'],
+    description: 'Padrão de nomenclatura de mensagens de commit em um sistema de controle de versão, onde cada mensagem segue um formato específico que indica o propósito e o impacto das alterações realizadas.'
   },
   {
     name: 'Dar push',
@@ -1201,6 +1248,11 @@ const termsData = [
     name: 'GitHub',
     categories: ['Programação e desenvolvimento', 'Versionamento'],
     description: 'Plataforma de hospedagem de código-fonte baseada em Git, usada para controle de versão e colaboração em projetos de desenvolvimento de software.'
+  },  
+  {
+  name: 'Fork',
+  categories: ['Versionamento'],
+  description: 'Termo utilizado em sistemas de versionamento de código-fonte para descrever a criação de uma cópia independente de um repositório. Permite que os desenvolvedores trabalhem em paralelo, preservando a versão original e permitindo modificações independentes.'
   },
 
   // Web
@@ -1268,6 +1320,18 @@ const termsData = [
     name: 'API REST (Application Programming Interface - Representational State Transfer)',
     categories: ['Web', 'Programação e desenvolvimento'],
     description: 'Estilo arquitetural que define um conjunto de princípios e restrições para criar serviços web que sejam escaláveis, confiáveis e de fácil integração. As APIs RESTful utilizam os métodos HTTP para realizar operações em recursos representados como URLs.'
+  },
+
+  // Análise de dados
+  {
+    name: 'Business Intelligence (BI)',
+    categories: ['Análise de dados'],
+    description: 'Conjunto de metodologias, processos e tecnologias que permitem a coleta, organização, análise e interpretação de dados para auxiliar na tomada de decisões estratégicas nas empresas.'
+  },  
+  {
+    name: 'Data Science',
+    categories: ['Análise de dados', 'Fundamentos de computação'],
+    description: 'Campo que combina estatística, matemática e programação para extrair conhecimentos a partir de conjuntos de dados, permitindo a resolução de problemas complexos e a tomada de decisões fundamentadas em dados.'
   },
 ];
 
