@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import termsData from '../data/termsData';
 import Header from './Header';
 import Footer from './Footer';
 import '../App.css';
-
-import { BsSearch } from 'react-icons/bs';
+import Filters from './Filters';
 
 const terms = termsData;
 const categories = Array.from(new Set(terms.flatMap((term) => term.categories))).sort();
@@ -18,12 +17,12 @@ function Glossary() {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-    setCurrentPage(1); 
+    setCurrentPage(1);
   };
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
-    setCurrentPage(1); 
+    setCurrentPage(1);
   };
 
   const handlePrevPage = () => {
@@ -37,13 +36,15 @@ function Glossary() {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-  const filteredTerms = terms
-    .filter((term) => {
-      const searchTermMatch = term.name.toLowerCase().includes(searchTerm.toLowerCase());
-      const categoryMatch = selectedCategory === '' || term.categories.includes(selectedCategory);
-      return searchTermMatch && categoryMatch;
-    })
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const filteredTerms = useMemo(() => {
+    return terms
+      .filter((term) => {
+        const searchTermMatch = term.name.toLowerCase().includes(searchTerm.toLowerCase());
+        const categoryMatch = selectedCategory === '' || term.categories.includes(selectedCategory);
+        return searchTermMatch && categoryMatch;
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, [searchTerm, selectedCategory]);
 
   const totalItems = filteredTerms.length;
   const calculatedTotalPages = Math.ceil(totalItems / itemsPerPage);
@@ -58,52 +59,26 @@ function Glossary() {
     });
   }, [calculatedTotalPages]);
 
-  const visibleTerms = filteredTerms.slice(startIndex, endIndex);
+  const visibleTerms = useMemo(() => {
+    return filteredTerms.slice(startIndex, endIndex);
+  }, [filteredTerms, startIndex, endIndex]);
 
   return (
     <>
       <Header />
 
       <div className="container">
-        <div className="filter-container">
-          <div className="search-container">
-            <input
-              type="text"
-              placeholder="Procure um termo"
-              value={searchTerm}
-              onChange={handleSearchChange}
-              className="search-input"
-            />
-            <BsSearch className="search-icon" />
-          </div>
-          <div className="category-container">
-            <select
-              id="category-select"
-              value={selectedCategory}
-              onChange={handleCategoryChange}
-              className="category-select"
-            >
-              <option value="">Todas as categorias</option>
-              {categories.map((category, index) => (
-                <option value={category} key={index}>
-                  {category}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div className="pagination">
-            <button onClick={handlePrevPage} disabled={currentPage === 1}>
-              &lt;
-            </button>
-            <span>
-              {currentPage}/{totalPages}
-            </span>
-            <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-              &gt;
-            </button>
-          </div>
-        </div>
+        <Filters
+          searchTerm={searchTerm}
+          selectedCategory={selectedCategory}
+          categories={categories}
+          handleSearchChange={handleSearchChange}
+          handleCategoryChange={handleCategoryChange}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          handlePrevPage={handlePrevPage}
+          handleNextPage={handleNextPage}
+        />
 
         <div className="cards">
           {visibleTerms.map((term, index) => (
